@@ -103,5 +103,5 @@ int main(float x1, float y1, float x2, float y2){
     if (sensor1.y < bcy && sensor2.y > scy){ answer = HardCase(sensor1, sensor2, step, bcy, scy); }
     if ((sensor1.y < scy && sensor1.y > bcy && sensor2.y < bcy)  || (sensor2.y < scy && sensor2.y > bcy && sensor1.y < bcy)){ answer = MiddleCase(sensor1, sensor2, step, bcy); }
     if ((sensor1.y < scy && sensor1.y > bcy && sensor2.y > scy)  || (sensor2.y < scy && sensor2.y > bcy && sensor1.y > scy)){ answer = MiddleCase(sensor1, sensor2, step, scy); }
-    cout << answer;
+    return answer;
 }
